@@ -71,9 +71,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8pq-BQ-puu">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="8pq-BQ-puu">
                                 <rect key="frame" x="206" y="226" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="firstStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="F73-Bm-tAm"/>
+                                    <action selector="firstStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="HK0-xv-B75"/>
+                                    <action selector="firstStepperItem:" destination="BYZ-38-t0r" eventType="valueChanged" id="vch-PS-Dcb"/>
+                                </connections>
                             </stepper>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6A-DR-wQj">
                                 <rect key="frame" x="16" y="263" width="182" height="30"/>
@@ -89,7 +94,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Z2V-yB-Nhd">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z2V-yB-Nhd">
                                 <rect key="frame" x="206" y="264" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stepper>
@@ -170,6 +175,9 @@
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="0.96298433080000001" green="1" blue="0.97552711869999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetQuantity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dax-PF-XmP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -190,6 +198,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="fifthStepperLabel" destination="arX-ld-Zue" id="dIh-q4-c4b"/>
+                        <outlet property="firstStepper" destination="8pq-BQ-puu" id="udG-J3-27O"/>
+                        <outlet property="firstStepperLabel" destination="9OD-tD-P76" id="tp5-eL-6B5"/>
+                        <outlet property="fourthStepperLabel" destination="kbX-QA-0ni" id="Vnd-sp-X5y"/>
+                        <outlet property="secondStepperLabel" destination="kuY-8S-7aU" id="6Ry-3G-MSr"/>
+                        <outlet property="thirdStepperLabel" destination="TNV-X3-T48" id="SoL-xZ-0C1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
