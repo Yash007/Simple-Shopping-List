@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     //stepper button listed here
-    @IBOutlet weak var firstStepper: UIStepper!
     
     
     //stepper counter listed here
@@ -26,9 +25,25 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    @IBAction func secondSliderAction(_ sender: UISlider) {
+        secondStepperLabel.text = String(roundf(sender.value))
+    }
     
-    @IBAction func firstStepperAction(_ sender: Any) {
-        firstStepperLabel.text = "\(Int(firstStepper.value))"
+    @IBAction func firstSliderAction(_ sender: UISlider) {
+        firstStepperLabel.text = String(roundf(sender.value))
+    }
+    
+    @IBAction func thirdSliderAction(_ sender: UISlider) {
+        thirdStepperLabel.text = String(roundf(sender.value))
+    }
+    
+    @IBAction func fourthSliderAction(_ sender: UISlider) {
+        fourthStepperLabel.text = String(roundf(sender.value))
+    }
+    
+    
+    @IBAction func fifthSliderAction(_ sender: UISlider) {
+        fifthStepperLabel.text = String(roundf(sender.value))
     }
     
     @IBAction func resetQuantity(_ sender: Any) {
@@ -38,5 +53,7 @@ class ViewController: UIViewController {
         fourthStepperLabel.text = "1"
         fifthStepperLabel.text = "1"
     }
+    
+    
 }
 
