@@ -20,30 +20,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourthStepperLabel: UILabel!
     @IBOutlet weak var fifthStepperLabel: UILabel!
     
+    @IBOutlet weak var slider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func secondSliderAction(_ sender: UISlider) {
-        secondStepperLabel.text = String(roundf(sender.value))
+        secondStepperLabel.text = String(Int(roundf(sender.value)))
     }
     
     @IBAction func firstSliderAction(_ sender: UISlider) {
-        firstStepperLabel.text = String(roundf(sender.value))
+        firstStepperLabel.text = String(Int(roundf(sender.value)))
     }
     
     @IBAction func thirdSliderAction(_ sender: UISlider) {
-        thirdStepperLabel.text = String(roundf(sender.value))
+        thirdStepperLabel.text = String(Int(roundf(sender.value)))
     }
     
     @IBAction func fourthSliderAction(_ sender: UISlider) {
-        fourthStepperLabel.text = String(roundf(sender.value))
+        fourthStepperLabel.text = String(Int(roundf(sender.value)))
     }
     
     
     @IBAction func fifthSliderAction(_ sender: UISlider) {
-        fifthStepperLabel.text = String(roundf(sender.value))
+        fifthStepperLabel.text = String(Int(roundf(sender.value)))
     }
     
     @IBAction func resetQuantity(_ sender: Any) {

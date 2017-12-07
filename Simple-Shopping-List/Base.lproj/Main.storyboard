@@ -213,6 +213,7 @@
                         <outlet property="firstStepperLabel" destination="9OD-tD-P76" id="tp5-eL-6B5"/>
                         <outlet property="fourthStepperLabel" destination="kbX-QA-0ni" id="Vnd-sp-X5y"/>
                         <outlet property="secondStepperLabel" destination="kuY-8S-7aU" id="6Ry-3G-MSr"/>
+                        <outlet property="slider" destination="AGx-A8-xv3" id="5CF-wf-Da3"/>
                         <outlet property="thirdStepperLabel" destination="TNV-X3-T48" id="SoL-xZ-0C1"/>
                     </connections>
                 </viewController>
